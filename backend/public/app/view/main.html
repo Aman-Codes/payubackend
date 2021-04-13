@@ -1,0 +1,21 @@
+<div class="jumbotron text-center">
+    <h1>Payumoney Payment Gateway</h1>
+    <h3> Rs {{amount}}</h3>
+    <form id="paymentForm" action='https://test.payu.in/_payment' method='post'>
+        <input type="hidden" name="key" value="{{mkey}}" />
+        <input type="hidden" name="txnid" value="{{txnid}}" />
+        <input type="hidden" name="amount" value="{{amount}}" />
+        <input type="hidden" name="productinfo" value="{{productInfo}}" />
+        <input type="hidden" name="firstname" value="{{firstName}}" />
+        <input type="hidden" name="udf1" value={{id}} />
+        <input type="hidden" name="email" value="{{email}}" />
+        <input type="hidden" name="phone" value="{{phone}}" />
+        <input type="hidden" name="lastname" value="{{lastName}}" />
+        <input type="hidden" name="surl" value="http://localhost:3000/PaymentStatus" />
+        <input type="hidden" name="furl" value="http://localhost:3000/PaymentStatus" />
+        <input type="hidden" name="hash" id="hash" value="{{hash}}">
+        <div class="pay-now-button-outer">
+            <button class="btn btn-primary fontBold" ng-click="presubmit()" type="button">PAY NOW</button>
+        </div>
+    </form>
+</div>

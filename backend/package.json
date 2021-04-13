@@ -1,0 +1,15 @@
+{
+  "name": "node-payu",
+  "version": "1.0.0",
+  "description": "PayUmoney with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Navjot Dhanawat <navjotdhanawat@gmail.com> (http://www.navjotdhanawat.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "js-sha512": "^0.8.0"
+  }
+}

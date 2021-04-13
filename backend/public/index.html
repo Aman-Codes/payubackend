@@ -1,0 +1,38 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self' http://localhost:3000/">-->
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+        .navbar { border-radius:0; }
+    </style>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha512/0.3.0/sha512.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="app/router.js"></script>
+    <script src="app/controller/mainController.js"></script>
+
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="payuApp">
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Payumoney Demo</a>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <div ng-view></div>
+</div>
+
+</body>
+</html>
